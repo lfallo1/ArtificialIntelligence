@@ -30,9 +30,4 @@ public class BFS implements SearchService {
         }
     }
 
-    @Override
-    public void searchRecursive(Vertex vertex) {
-        throw new NotImplementedException();
-    }
-
 }

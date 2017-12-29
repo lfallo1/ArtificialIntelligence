@@ -10,23 +10,8 @@ import java.util.Stack;
 public class DFS implements SearchService {
 
     /**
-     * recursive
-     * @param vertex
-     */
-    @Override
-    public void searchRecursive(Vertex vertex) {
-        vertex.setVisited(true);
-        System.out.println(vertex);
-        for(Vertex v : vertex.getNeighborList()){
-            if(!v.isVisited()){
-                search(v);
-            }
-        }
-    }
-
-    /**
-     * iterative
-     * @param vertex
+     * iterative implementation of DFS
+     * @param root
      */
     @Override
     public void search(Vertex root) {
