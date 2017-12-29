@@ -1,4 +1,4 @@
-package com.lancefallon.ai.bfs;
+package com.lancefallon.ai.domain;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,7 +45,7 @@ public class Vertex {
 
     @Override
     public String toString() {
-        return "com.lancefallon.ai.bfs.Vertex{" +
+        return "com.lancefallon.ai.domain.Vertex{" +
                 "value=" + value +
                 ", visited=" + visited +
                 ", neighborList=" + neighborList +

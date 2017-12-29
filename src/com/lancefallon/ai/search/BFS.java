@@ -1,10 +1,17 @@
-package com.lancefallon.ai.bfs;
+package com.lancefallon.ai.search;
+
+import com.lancefallon.ai.domain.Vertex;
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Bfs {
+/**
+ * Breadth-First search implementation. Visit each neighbor.
+ */
+public class BFS implements SearchService {
 
+    @Override
     public void search(Vertex root){
         Queue queue = new LinkedList<>();
         root.setVisited(true);
@@ -21,6 +28,11 @@ public class Bfs {
                 }
             }
         }
+    }
+
+    @Override
+    public void searchRecursive(Vertex vertex) {
+        throw new NotImplementedException();
     }
 
 }
